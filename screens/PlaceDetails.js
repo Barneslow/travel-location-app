@@ -20,7 +20,6 @@ const PlaceDetails = ({ route, navigation }) => {
       const place = await fetchPlaceDetails(selectedPlaceId);
       setLoadedPlace(place);
 
-      console.log(place);
       navigation.setOptions({
         title: place.title,
       });
